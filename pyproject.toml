@@ -1,0 +1,16 @@
+[project]
+name = "refactor-cli"        # must be unique on PyPI
+dynamic = ["version"]
+description = "CLI tool to organize files using AI"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = ["typer"]
+
+[project.scripts]
+refactor = "refactor.cli:app"
+
+[build-system]
+requires = ["setuptools>=61.0", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
